@@ -3,8 +3,10 @@
 from collections import Counter
 from random import random
 import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+
 
 # COUNTERS
 def exact_counter(stream: list[str], counts: Counter = Counter()) -> dict: 
@@ -41,20 +43,50 @@ def scale_counts(counts: dict, k: float = 0.125):
     return new_counts
 
 # STATISTICAL AND GRAPHICAL FUNCTIONS
-def get_statistics(data: list) -> dict:
+def mean_absolute_error(exact_count: dict, approx_df: pd.DataFrame, n: int) -> dict:
     """
-    Returns dictionary with several statistical information
-    Assumes list only has information about one of the letters counted
+    Returns mean absolute errors of dataframe.
     """
-    summary = {'mean': np.mean(data), 'median': np.median(data), 
-               'stdev': np.std(data), 'var': np.var(data)}
+    error = {item: 0 for item in exact_count} # initialize error dict
+
+    for i in range(n+1):
+        tmp_data = approx_df.iloc[i, :]
+        error = {col: error[col] + abs(exact_count[col] - tmp_data[col]) for col in error}
+        
+    error = {col: error[col]/n for col in error}
+    return error
+
+def mean_relative_error(mae: dict, approx_df: pd.DataFrame, n: int) -> dict:
+    """
+    Returns mean relative errors of dataframe.
+    """
     
-    return summary
+    for i in range(n+1):
+        tmp_data = approx_df.iloc[i, :]
+        error = {col: mae[col] / tmp_data[col] for col in mae}
+        
+    return error
 
+def get_stats(approx_count: dict, df: pd.DataFrame, n: int) -> pd.DataFrame:
+    """Returns DataFrame with several statistical measures"""
 
-def plot_hist(data: list, item: str):
+    stats_df = df.describe().round(4) # describe() already produces several statistical information 
+    mae = mean_absolute_error(approx_count, approx_df = df, n= n) # mean absolute error
+    stats_df.loc['mae',:] = mae
+    mre = mean_relative_error(mae, approx_df = df, n = n) # mean relative error
+    stats_df.loc['mre',:] = mre 
+    mad = (df - df.mean()).abs().mean() # mean absolute deviation
+    stats_df.loc['mad',:] = mad
+
+    return stats_df
+
+def plot_hist(data: list, items: list[str]):
     "Plots the histogram of the input data"
-
+    sns.histplot(data = data[items], stat = 'count', bins = 10)
+    plt.xlabel('Frequency')
+    plt.ylabel("Counts of the letter")
+    plt.title("Histogram of the counts of given letters")
+    plt.show()
 
 
 def main(args):
