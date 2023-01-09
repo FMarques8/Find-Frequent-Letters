@@ -5,10 +5,12 @@
 
 from collections import defaultdict
 
-
 class LossyCounter():
     """
-    Class for a Lossy counter
+    Class to implement a Lossy counter. 
+    
+    It has one parameter:
+    - 'k' maximum number of letters in counter, represents the k-most frequent letters
     """
     
     def __init__(self, k: int = 3):

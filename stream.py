@@ -8,6 +8,7 @@ from utils import exact_counter, approximate_counter, scale_counts
 from collections import Counter
 from lossyCount import LossyCounter
 from itertools import chain
+from stop_words import get_stop_words
 
 nltk.download('stopwords') #downloads stopwords list
 
@@ -48,8 +49,8 @@ class Stream:
         self.exact_most_common, self.approx_most_common = self.most_common()
     
     # rewrite printing dunder method for easier reading of Stream object
-    def __repr__(self) -> str:
-        strng = f"File: {self._path}\n\nExact counter k = {self._k} most frequent items\n"
+    def __str__(self) -> str:
+        strng = f"Exact counter k = {self._k} most frequent items\n"
         for item, total in self.exact_most_common:
             strng += f"{item}: {total}; "
         strng += f"\n\nApproximate counter with fixed probability 1/8 k = {self._k} most frequent items\n"
@@ -76,7 +77,7 @@ class Stream:
                 if line.startswith('Language: '):
                     language = line.strip().split()[-1].lower()
                     continue
-                elif line.startswith("*** START OF THE PROJECT GUTENBERG EBOOK") or line.startswith("*** START OF THIS PROJECT GUTENBERG EBOOK"): # end of Project Gutenberg's header
+                elif line.startswith("*** START OF THE PROJECT GUTENBERG EBOOK") or line.startswith("*** START OF THIS PROJECT GUTENBERG EBOOK") or line.startswith("***START OF THE PROJECT GUTENBERG EBOOK"): # end of Project Gutenberg's header
                     header = False
                     continue
                 elif header:
@@ -93,7 +94,7 @@ class Stream:
                 # COUNTERS
                 # Creates list with list of letters in line, ready to be used by the counters
                 stream = list(chain.from_iterable(line))
-
+                
                 # Exact counter
                 self.exact_count = exact_counter(stream, self.exact_count)
 
@@ -108,8 +109,12 @@ class Stream:
         """
         Returns clean line that is stripped, split and has had the stopwords removed, accordingly to nltk.corpus.stopwords
         """
+        try:
+            stop_words = list(map(str.upper,stopwords.words(language))) # converts stopwords list to uppercase
         
-        stop_words = list(map(str.upper,stopwords.words(language))) # converts stopwords list to uppercase
+        except OSError:
+            stop_words = list(map(str.upper, get_stop_words(language))) # attempt to get stopwords from a different module
+            
         punctuation = string.punctuation + '—'+'“'+ '’'+ '”' # these extra characters flared up for certain texts, might be other ones that were missed
         line_split = unidecode.unidecode(line).translate(str.maketrans('', '', punctuation)).split() #removes all punctuation
         #removes stop words and numbers, 'not any' to remove numbers with type str, unidecode removes string accents 
@@ -131,7 +136,7 @@ class Stream:
                 if line.startswith('Language: '):
                     language = line.strip().split()[-1].lower()
                     continue
-                elif line.startswith("*** START OF THE PROJECT GUTENBERG EBOOK"): # end of Project Gutenberg's header
+                elif line.startswith("*** START OF THE PROJECT GUTENBERG EBOOK") or line.startswith("*** START OF THIS PROJECT GUTENBERG EBOOK") or line.startswith("***START OF THE PROJECT GUTENBERG EBOOK"): # end of Project Gutenberg's header
                     header = False
                     continue
                 elif header:
@@ -165,7 +170,7 @@ class Stream:
             approx_j = exact_j = max(approx_counts, key=approx_counts.get)
             approx_most_common.append((approx_j, approx_counts[approx_j]))
             del approx_counts[approx_j]
-        
+    
         return exact_most_common, approx_most_common
 
 

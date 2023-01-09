@@ -1,4 +1,4 @@
-# utils file with functions used in script 
+# utilities file with functions used in script 
 # F Marques - January 2023
 from collections import Counter
 from random import random
@@ -85,7 +85,7 @@ def plot_hist(data: pd.DataFrame, items: list[str]):
     sns.histplot(data = data[items], stat = 'count', bins = 20, kde = True)
     plt.ylabel('Frequency')
     plt.xlabel("Counts of the letter")
-    plt.title("Histogram of the counts of given letters")
+    plt.title("Histogram of the counts")
     plt.show()
 
 def plot_counts(data: pd.DataFrame, items: list[str]):
@@ -94,9 +94,21 @@ def plot_counts(data: pd.DataFrame, items: list[str]):
     sns.lineplot(data = data[items], marker = True, dashes = False)
     plt.ylabel("Counts")
     plt.xlabel("Run")
-    plt.legend()
+    plt.xticks(range(0, len(data.index), 15))
+    plt.title("Counts vs Run")
     plt.grid()
     plt.show()
+
+def author_and_title(string: str):
+    """Format given string to return author and title"""
+    try:
+        title, author = tuple(string.split('_')) # gets title and author from key string
+        title = title.replace('-', ' ') 
+        author = author[:-4].replace('-', ' ') # string formatting the author and title 
+    except ValueError:
+        title = string[:-4].replace('-', ' ')
+        author = ''
+    return author, title
 
 def main(args):
     return 0

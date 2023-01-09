@@ -4,8 +4,8 @@
 import utils
 import stream
 import pandas as pd
-import numpy as np
 import os
+from random import choice
 from IPython.display import display
 
 def run_trials(stream: stream.Stream, n: int = 10):
@@ -34,29 +34,66 @@ def run_trials(stream: stream.Stream, n: int = 10):
     
     return trial_df
 
-def load_streams() -> dict:
+def load_streams(K: list[int]) -> dict[str, list[stream.Stream]]:
     """Loads Stream objects and returns dictionary with all of the data"""
     cwd = os.getcwd() + "/books" # folder with books
     data = {}
-    K = [3, 5, 10] # diferent k values
     
     for file in os.listdir(cwd):
         file_stream = []
         for k in K:
-            S = stream.Stream(file, k) # processes file with k value
+            S = stream.Stream(cwd + r"\\" + file, k) # processes file with k value
             file_stream.append(S) # append to list with all k values
         data[file] = file_stream # appends list of Streams to main dictionary
     return data
 
 
+
+def save_stats(stats_data: tuple[str, list[stream.Stream]], K: list[int] = [3, 5, 10]) -> None:
+    "Saves statistical data given dict with streams to text file."
+    
+    key, value = stats_data # unpack tuple
+    author, title = utils.author_and_title(key)
+    stats_data = value 
+
+    # save statistical results to file
+    with open("stats_results.txt", 'w') as f:
+        f.write(f"statistics for {title} by {author}\n########################\n\n")
+        for i, k in enumerate(K):
+            # iterate over the streams and run trials
+            curr_stream = stats_data[i]
+            trial_df = run_trials(curr_stream, n=100)
+            f.write(f"""k = {k}\n
+                    statistical data:\n\n
+                    {trial_df.to_string()}\n\n
+                    
+                    statistical measures:\n\n
+                    {curr_stream.approx_stats.to_string()}\n\n\n
+                    """)
+        
+            most_frequent = [letter for letter,_ in curr_stream.approx_most_common]
+            utils.plot_counts(trial_df, most_frequent)
+            utils.plot_hist(trial_df, most_frequent)
+
+
+
 def main():
-    data = load_streams()
+    K = [3, 5, 10] # diferent k values
+    data = load_streams(K)
+    
+    # Save k-most frequent letters to text file
+    with open("counter_results.txt", 'w') as f:
+        f.write("results from counters\n######################\n\n")
+        for key, item in data.items():
+            author, title = utils.author_and_title(key)
+            f.write(f"{title} by {author}:\n\n")
+            for strm in item:
+                f.write(str(strm))
+                f.write("\n\n")
+            f.write("\n")
+    
+    # Statistical data treatment
+    stats_data = choice(list(data.items())) # choose a random file for the statistical testing
+    save_stats(stats_data, K)
 
-
-data = stream.Stream("Metamorphosis_Kafka.txt", k = 10)
-
-print(data)
-
-trail_df = run_trials(data, 20)
-utils.plot_hist(trail_df, ['E', 'T', 'O', 'A'])
-display(trail_df)
+main()
