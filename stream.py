@@ -151,8 +151,8 @@ class Stream:
     def most_common(self):
         """Find k most frequent letters of exact and approximate counters"""
         # extract counts from object
-        exact_counts = self.exact_count
-        approx_counts = self.approx_count
+        exact_counts = self.exact_count.copy() #copy so it doesnt change object attributes
+        approx_counts = self.approx_count.copy()
         exact_most_common = []
         approx_most_common = []
         

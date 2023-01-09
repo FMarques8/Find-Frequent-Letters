@@ -80,14 +80,23 @@ def get_stats(approx_count: dict, df: pd.DataFrame, n: int) -> pd.DataFrame:
 
     return stats_df
 
-def plot_hist(data: list, items: list[str]):
+def plot_hist(data: pd.DataFrame, items: list[str]):
     "Plots the histogram of the input data"
-    sns.histplot(data = data[items], stat = 'count', bins = 10)
-    plt.xlabel('Frequency')
-    plt.ylabel("Counts of the letter")
+    sns.histplot(data = data[items], stat = 'count', bins = 20, kde = True)
+    plt.ylabel('Frequency')
+    plt.xlabel("Counts of the letter")
     plt.title("Histogram of the counts of given letters")
     plt.show()
 
+def plot_counts(data: pd.DataFrame, items: list[str]):
+    "Line plot of the counts of given items from given stream"
+    data.index = [str(x+1) for x in range(len(data.index))] # change index so that in x axis ticks are numeric
+    sns.lineplot(data = data[items], marker = True, dashes = False)
+    plt.ylabel("Counts")
+    plt.xlabel("Run")
+    plt.legend()
+    plt.grid()
+    plt.show()
 
 def main(args):
     return 0
