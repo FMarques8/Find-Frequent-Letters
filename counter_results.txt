@@ -7,7 +7,7 @@ Exact counter k = 3 most frequent items
 E: 26711; A: 26591; T: 17256; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 3388; A: 3267; T: 2211; 
+A: 3278; E: 3276; T: 2146; 
 
 Lossy counter k = 3 most frequent items
 T: 2; 
@@ -16,7 +16,7 @@ Exact counter k = 5 most frequent items
 E: 26711; A: 26591; T: 17256; O: 14977; N: 13042; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 3359; A: 3334; T: 2153; O: 1926; N: 1582; 
+A: 3333; E: 3281; T: 2087; O: 1813; N: 1609; 
 
 Lossy counter k = 5 most frequent items
 A: 6; N: 2; O: 1; T: 2; 
@@ -25,7 +25,7 @@ Exact counter k = 10 most frequent items
 E: 26711; A: 26591; T: 17256; O: 14977; N: 13042; L: 12373; S: 12071; K: 9615; I: 9237; Z: 8642; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 3418; A: 3325; T: 2130; O: 1833; N: 1650; L: 1557; S: 1517; K: 1162; I: 1141; Z: 1064; 
+A: 3317; E: 3312; T: 2187; O: 1938; L: 1605; N: 1595; S: 1475; K: 1186; R: 1135; I: 1108; 
 
 Lossy counter k = 10 most frequent items
 A: 26591; E: 26679; T: 291; O: 17; N: 5; 
@@ -37,7 +37,7 @@ Exact counter k = 3 most frequent items
 E: 13615; T: 10726; A: 8809; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 1674; T: 1325; A: 1097; 
+E: 1724; T: 1397; A: 1178; 
 
 Lossy counter k = 3 most frequent items
 N: 1; D: 1; 
@@ -46,7 +46,7 @@ Exact counter k = 5 most frequent items
 E: 13615; T: 10726; A: 8809; O: 8158; H: 7394; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 1644; T: 1401; A: 1129; O: 1036; H: 952; 
+E: 1710; T: 1360; A: 1091; O: 972; H: 957; 
 
 Lossy counter k = 5 most frequent items
 S: 1; E: 1; N: 1; D: 1; 
@@ -55,7 +55,7 @@ Exact counter k = 10 most frequent items
 E: 13615; T: 10726; A: 8809; O: 8158; H: 7394; I: 7144; N: 7028; S: 6515; R: 5469; D: 4938; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 1712; T: 1313; A: 1075; H: 982; O: 974; I: 878; N: 848; S: 818; R: 709; D: 636; 
+E: 1687; T: 1385; A: 1114; O: 1000; I: 930; H: 885; N: 875; S: 845; R: 670; D: 607; 
 
 Lossy counter k = 10 most frequent items
 E: 13607; T: 6003; H: 4; P: 2; M: 2; R: 1; D: 2; A: 1; Y: 1; S: 1; N: 1; 
@@ -67,7 +67,7 @@ Exact counter k = 3 most frequent items
 E: 26430; T: 18378; O: 16013; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 3219; T: 2348; A: 1994; 
+E: 3233; T: 2224; A: 1997; 
 
 Lossy counter k = 3 most frequent items
 O: 2; S: 1; 
@@ -76,7 +76,7 @@ Exact counter k = 5 most frequent items
 E: 26430; T: 18378; O: 16013; A: 15890; N: 13846; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 3394; T: 2288; O: 1964; A: 1954; N: 1719; 
+E: 3193; T: 2335; O: 1997; A: 1912; N: 1772; 
 
 Lossy counter k = 5 most frequent items
 E: 2; O: 1; K: 1; S: 1; 
@@ -85,7 +85,7 @@ Exact counter k = 10 most frequent items
 E: 26430; T: 18378; O: 16013; A: 15890; N: 13846; I: 13219; H: 12892; S: 12788; R: 12373; D: 9284; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 3325; T: 2313; O: 1987; A: 1956; N: 1691; I: 1655; H: 1642; S: 1596; R: 1539; D: 1141; 
+E: 3333; T: 2267; O: 2056; A: 1936; N: 1769; I: 1617; H: 1599; S: 1523; R: 1523; D: 1140; 
 
 Lossy counter k = 10 most frequent items
 E: 26428; T: 376; O: 22; A: 2; W: 1; B: 1; K: 1; S: 1; 
@@ -97,7 +97,7 @@ Exact counter k = 3 most frequent items
 A: 282642; I: 178738; N: 167184; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-A: 35422; I: 22425; N: 20826; 
+A: 35367; I: 22115; N: 20618; 
 
 Lossy counter k = 3 most frequent items
 O: 2; S: 1; 
@@ -106,7 +106,7 @@ Exact counter k = 5 most frequent items
 A: 282642; I: 178738; N: 167184; T: 159729; E: 133317; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-A: 35125; I: 22620; N: 20903; T: 19920; E: 16646; 
+A: 35350; I: 22302; N: 20890; T: 19819; E: 16703; 
 
 Lossy counter k = 5 most frequent items
 O: 2; S: 1; 
@@ -115,7 +115,7 @@ Exact counter k = 10 most frequent items
 A: 282642; I: 178738; N: 167184; T: 159729; E: 133317; S: 117224; L: 89829; O: 82612; K: 82309; U: 71655; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-A: 35223; I: 22296; N: 20939; T: 19970; E: 16543; S: 14596; L: 11164; O: 10325; K: 10260; U: 8977; 
+A: 35453; I: 22420; N: 20829; T: 19964; E: 16519; S: 14814; L: 11211; K: 10458; O: 10248; U: 8825; 
 
 Lossy counter k = 10 most frequent items
 A: 282642; I: 178640; N: 162136; E: 1863; T: 372; O: 16; B: 1; K: 1; S: 1; 
@@ -127,7 +127,7 @@ Exact counter k = 3 most frequent items
 E: 5213; T: 4495; O: 3606; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 650; T: 564; O: 423; 
+E: 652; T: 571; O: 444; 
 
 Lossy counter k = 3 most frequent items
 
@@ -136,7 +136,7 @@ Exact counter k = 5 most frequent items
 E: 5213; T: 4495; O: 3606; I: 3350; A: 3304; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 666; T: 599; O: 448; I: 417; A: 400; 
+E: 660; T: 543; O: 433; A: 417; N: 411; 
 
 Lossy counter k = 5 most frequent items
 O: 2; K: 1; S: 1; 
@@ -145,7 +145,7 @@ Exact counter k = 10 most frequent items
 E: 5213; T: 4495; O: 3606; I: 3350; A: 3304; N: 3067; R: 2916; S: 2678; H: 2386; L: 1711; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 647; T: 589; O: 427; I: 412; A: 406; R: 375; N: 359; S: 319; H: 302; L: 205; 
+E: 671; T: 550; O: 431; I: 413; A: 404; N: 382; R: 332; S: 323; H: 267; L: 206; 
 
 Lossy counter k = 10 most frequent items
 E: 5189; T: 4175; O: 22; K: 1; S: 1; 
@@ -157,7 +157,7 @@ Exact counter k = 3 most frequent items
 E: 37438; T: 27776; A: 23482; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 4754; T: 3502; A: 2995; 
+E: 4635; T: 3474; A: 2938; 
 
 Lossy counter k = 3 most frequent items
 N: 1; 
@@ -166,7 +166,7 @@ Exact counter k = 5 most frequent items
 E: 37438; T: 27776; A: 23482; O: 23250; I: 23118; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 4779; T: 3564; O: 2952; A: 2927; I: 2884; 
+E: 4554; T: 3554; I: 2953; A: 2858; N: 2848; 
 
 Lossy counter k = 5 most frequent items
 D: 2; M: 1; O: 1; R: 1; N: 1; 
@@ -175,7 +175,7 @@ Exact counter k = 10 most frequent items
 E: 37438; T: 27776; A: 23482; O: 23250; I: 23118; N: 22539; S: 21914; R: 17516; H: 17040; L: 13035; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 4685; T: 3443; A: 2869; O: 2839; N: 2838; I: 2800; S: 2665; H: 2212; R: 2154; L: 1564; 
+E: 4645; T: 3489; A: 2908; I: 2837; O: 2817; N: 2798; S: 2684; R: 2130; H: 2119; L: 1676; 
 
 Lossy counter k = 10 most frequent items
 E: 37433; A: 5; N: 6; D: 2; M: 1; O: 1; R: 1; 
@@ -187,7 +187,7 @@ Exact counter k = 3 most frequent items
 E: 42426; T: 28839; A: 27237; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 5303; T: 3605; A: 3434; 
+E: 5260; T: 3597; A: 3408; 
 
 Lossy counter k = 3 most frequent items
 
@@ -196,7 +196,7 @@ Exact counter k = 5 most frequent items
 E: 42426; T: 28839; A: 27237; O: 25037; N: 22596; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 5282; T: 3708; A: 3383; O: 3128; H: 2798; 
+E: 5205; T: 3625; A: 3408; O: 3150; H: 2864; 
 
 Lossy counter k = 5 most frequent items
 E: 3; R: 1; 
@@ -205,7 +205,7 @@ Exact counter k = 10 most frequent items
 E: 42426; T: 28839; A: 27237; O: 25037; N: 22596; H: 22467; R: 20843; I: 20345; S: 19856; D: 17557; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 5210; T: 3669; A: 3358; O: 3127; H: 2806; N: 2774; R: 2585; S: 2500; I: 2456; D: 2183; 
+E: 5248; T: 3588; A: 3437; O: 3124; N: 2868; H: 2769; R: 2656; I: 2500; S: 2470; D: 2227; 
 
 Lossy counter k = 10 most frequent items
 E: 42317; T: 16; O: 5; H: 4; R: 1; 
@@ -217,7 +217,7 @@ Exact counter k = 3 most frequent items
 E: 51857; N: 28084; A: 19005; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 6384; N: 3536; A: 2428; 
+E: 6425; N: 3537; A: 2416; 
 
 Lossy counter k = 3 most frequent items
 
@@ -226,7 +226,7 @@ Exact counter k = 5 most frequent items
 E: 51857; N: 28084; A: 19005; I: 16308; O: 15686; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 6419; N: 3487; A: 2293; I: 2116; T: 1943; 
+E: 6413; N: 3507; A: 2390; I: 2080; T: 1926; 
 
 Lossy counter k = 5 most frequent items
 T: 5; A: 2; P: 1; E: 1; L: 1; S: 1; 
@@ -235,7 +235,7 @@ Exact counter k = 10 most frequent items
 E: 51857; N: 28084; A: 19005; I: 16308; O: 15686; T: 15430; R: 14827; D: 14474; L: 10901; S: 8712; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 6543; N: 3589; A: 2339; I: 2052; O: 1983; T: 1949; D: 1872; R: 1841; L: 1309; H: 1048; 
+E: 6474; N: 3388; A: 2345; I: 2015; O: 1981; T: 1915; R: 1785; D: 1772; L: 1318; S: 1099; 
 
 Lossy counter k = 10 most frequent items
 E: 51856; N: 27943; A: 6; T: 5; O: 2; P: 1; L: 1; S: 1; 
@@ -247,7 +247,7 @@ Exact counter k = 3 most frequent items
 E: 2968; T: 2208; A: 1997; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 352; T: 254; A: 241; 
+E: 347; A: 288; T: 256; 
 
 Lossy counter k = 3 most frequent items
 O: 1; S: 1; 
@@ -256,7 +256,7 @@ Exact counter k = 5 most frequent items
 E: 2968; T: 2208; A: 1997; I: 1762; N: 1744; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 362; T: 276; N: 243; A: 232; O: 208; 
+E: 361; T: 250; N: 245; A: 241; I: 203; 
 
 Lossy counter k = 5 most frequent items
 O: 1; S: 1; 
@@ -265,7 +265,7 @@ Exact counter k = 10 most frequent items
 E: 2968; T: 2208; A: 1997; I: 1762; N: 1744; O: 1726; H: 1420; R: 1407; S: 1381; D: 1100; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 358; T: 271; I: 240; A: 229; O: 211; N: 197; H: 183; R: 161; S: 155; D: 123; 
+E: 389; A: 261; T: 259; I: 237; O: 186; R: 181; H: 174; N: 170; S: 150; D: 118; 
 
 Lossy counter k = 10 most frequent items
 E: 2934; T: 121; I: 34; R: 4; D: 1; O: 2; M: 1; G: 1; S: 1; 
@@ -277,7 +277,7 @@ Exact counter k = 3 most frequent items
 E: 19351; T: 13972; A: 11877; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 2430; T: 1745; O: 1506; 
+E: 2314; T: 1693; O: 1507; 
 
 Lossy counter k = 3 most frequent items
 O: 1; Y: 1; 
@@ -286,7 +286,7 @@ Exact counter k = 5 most frequent items
 E: 19351; T: 13972; A: 11877; O: 11753; N: 10516; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 2382; T: 1725; A: 1521; O: 1456; N: 1379; 
+E: 2476; T: 1764; A: 1455; O: 1396; H: 1289; 
 
 Lossy counter k = 5 most frequent items
 E: 9; Y: 1; 
@@ -295,7 +295,7 @@ Exact counter k = 10 most frequent items
 E: 19351; T: 13972; A: 11877; O: 11753; N: 10516; H: 10396; I: 9583; S: 9066; R: 8519; D: 7630; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 2455; T: 1812; A: 1537; O: 1451; N: 1329; H: 1300; I: 1185; S: 1121; R: 1054; D: 955; 
+E: 2362; T: 1696; A: 1511; O: 1496; N: 1296; H: 1293; S: 1190; I: 1162; R: 1056; D: 980; 
 
 Lossy counter k = 10 most frequent items
 E: 19343; T: 52; A: 18; O: 5; F: 2; I: 1; C: 1; B: 1; Y: 1; 
@@ -307,7 +307,7 @@ Exact counter k = 3 most frequent items
 E: 94284; N: 48956; A: 34294; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 11596; N: 6154; A: 4169; 
+E: 11884; N: 6046; A: 4332; 
 
 Lossy counter k = 3 most frequent items
 A: 1; G: 1; 
@@ -316,7 +316,7 @@ Exact counter k = 5 most frequent items
 E: 94284; N: 48956; A: 34294; I: 32973; D: 31054; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 11580; N: 6179; A: 4321; I: 4072; D: 3912; 
+E: 11893; N: 6026; A: 4270; I: 4082; T: 3909; 
 
 Lossy counter k = 5 most frequent items
 D: 1; A: 1; G: 1; 
@@ -325,7 +325,7 @@ Exact counter k = 10 most frequent items
 E: 94284; N: 48956; A: 34294; I: 32973; D: 31054; T: 30271; R: 28950; O: 27656; S: 18433; H: 17718; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 11819; N: 6136; A: 4273; I: 4174; D: 3872; T: 3769; R: 3652; O: 3477; S: 2302; L: 2242; 
+E: 11742; N: 6074; A: 4326; I: 4208; D: 3881; T: 3836; R: 3664; O: 3426; S: 2259; H: 2205; 
 
 Lossy counter k = 10 most frequent items
 E: 94283; N: 57; O: 6; T: 2; R: 1; D: 2; A: 1; G: 1; 
@@ -337,7 +337,7 @@ Exact counter k = 3 most frequent items
 E: 67673; A: 64617; O: 47314; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 8359; A: 8017; O: 5918; 
+E: 8451; A: 8234; O: 5957; 
 
 Lossy counter k = 3 most frequent items
 O: 1; 
@@ -346,7 +346,7 @@ Exact counter k = 5 most frequent items
 E: 67673; A: 64617; O: 47314; S: 38979; N: 37529; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 8519; A: 8136; O: 5927; S: 4930; N: 4735; 
+E: 8475; A: 8123; O: 6020; N: 4788; S: 4778; 
 
 Lossy counter k = 5 most frequent items
 A: 1; Y: 1; O: 1; 
@@ -355,7 +355,7 @@ Exact counter k = 10 most frequent items
 E: 67673; A: 64617; O: 47314; S: 38979; N: 37529; R: 35058; I: 32182; L: 30488; D: 26731; T: 21192; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 8375; A: 8061; O: 5962; S: 4748; N: 4590; R: 4423; I: 3991; L: 3837; D: 3330; T: 2709; 
+E: 8366; A: 8001; O: 6029; S: 4912; N: 4568; R: 4424; I: 4047; L: 3804; D: 3314; T: 2645; 
 
 Lossy counter k = 10 most frequent items
 A: 64615; E: 67646; I: 95; N: 48; O: 15; D: 3; R: 3; C: 2; G: 1; V: 1; Y: 1; 
@@ -367,7 +367,7 @@ Exact counter k = 3 most frequent items
 E: 7841; T: 5672; O: 5022; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 969; T: 689; A: 624; 
+E: 1019; T: 657; O: 618; 
 
 Lossy counter k = 3 most frequent items
 E: 1; 
@@ -376,7 +376,7 @@ Exact counter k = 5 most frequent items
 E: 7841; T: 5672; O: 5022; A: 4998; N: 4252; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 957; T: 665; O: 608; A: 599; I: 518; 
+E: 945; T: 733; O: 649; A: 628; N: 535; 
 
 Lossy counter k = 5 most frequent items
 E: 5; F: 2; 
@@ -385,7 +385,7 @@ Exact counter k = 10 most frequent items
 E: 7841; T: 5672; O: 5022; A: 4998; N: 4252; R: 4247; I: 4196; S: 3805; H: 3688; D: 3020; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 986; T: 680; A: 624; O: 613; R: 524; I: 522; S: 511; N: 507; H: 438; D: 382; 
+E: 964; T: 689; O: 617; A: 580; N: 545; R: 513; I: 506; H: 497; S: 484; D: 355; 
 
 Lossy counter k = 10 most frequent items
 E: 7838; A: 29; S: 25; R: 22; F: 2; 
@@ -397,7 +397,7 @@ Exact counter k = 3 most frequent items
 E: 14525; T: 10559; O: 8750; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 1839; T: 1282; O: 1114; 
+E: 1756; T: 1254; A: 1094; 
 
 Lossy counter k = 3 most frequent items
 E: 1; D: 1; 
@@ -406,7 +406,7 @@ Exact counter k = 5 most frequent items
 E: 14525; T: 10559; O: 8750; A: 8710; I: 8691; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 1835; T: 1280; O: 1145; A: 1072; I: 1055; 
+E: 1856; T: 1251; I: 1076; A: 1063; O: 1043; 
 
 Lossy counter k = 5 most frequent items
 S: 4; E: 2; D: 1; 
@@ -415,7 +415,7 @@ Exact counter k = 10 most frequent items
 E: 14525; T: 10559; O: 8750; A: 8710; I: 8691; N: 8221; S: 7051; R: 6801; H: 5630; L: 5195; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 1838; T: 1329; O: 1105; A: 1055; N: 1002; I: 990; S: 862; R: 819; H: 730; L: 625; 
+E: 1889; T: 1284; A: 1061; I: 1044; O: 1038; N: 1033; S: 924; R: 837; L: 654; H: 645; 
 
 Lossy counter k = 10 most frequent items
 E: 14433; N: 23; S: 16; A: 5; T: 1; C: 1; H: 1; D: 1; 
@@ -427,7 +427,7 @@ Exact counter k = 3 most frequent items
 E: 4810; T: 3465; O: 2789; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 633; T: 438; O: 347; 
+E: 604; T: 400; O: 340; 
 
 Lossy counter k = 3 most frequent items
 
@@ -436,7 +436,7 @@ Exact counter k = 5 most frequent items
 E: 4810; T: 3465; O: 2789; A: 2740; H: 2408; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 647; T: 401; A: 350; O: 344; H: 315; 
+E: 567; T: 433; O: 381; A: 310; N: 302; 
 
 Lossy counter k = 5 most frequent items
 E: 6; 
@@ -445,7 +445,7 @@ Exact counter k = 10 most frequent items
 E: 4810; T: 3465; O: 2789; A: 2740; H: 2408; I: 2371; N: 2282; S: 2197; R: 2035; D: 1632; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 621; T: 451; O: 349; A: 315; H: 300; S: 281; I: 280; N: 266; R: 241; L: 177; 
+E: 589; T: 446; A: 350; O: 342; S: 309; H: 306; I: 305; R: 268; N: 262; D: 193; 
 
 Lossy counter k = 10 most frequent items
 E: 4810; H: 16; T: 4; I: 2; 
@@ -457,7 +457,7 @@ Exact counter k = 3 most frequent items
 E: 11899; T: 9022; O: 7468; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 1516; T: 1122; O: 941; 
+E: 1424; T: 1113; O: 913; 
 
 Lossy counter k = 3 most frequent items
 
@@ -466,7 +466,7 @@ Exact counter k = 5 most frequent items
 E: 11899; T: 9022; O: 7468; H: 7099; A: 7050; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 1528; T: 1145; O: 936; H: 901; A: 834; 
+E: 1486; T: 1182; O: 956; H: 919; A: 857; 
 
 Lossy counter k = 5 most frequent items
 D: 1; Y: 1; 
@@ -475,7 +475,7 @@ Exact counter k = 10 most frequent items
 E: 11899; T: 9022; O: 7468; H: 7099; A: 7050; I: 5939; N: 5915; S: 5680; R: 5462; D: 4185; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 1473; T: 1194; O: 950; H: 862; A: 837; I: 764; R: 752; N: 723; S: 699; D: 495; 
+E: 1480; T: 1124; O: 945; A: 886; H: 858; I: 771; R: 712; S: 707; N: 704; D: 497; 
 
 Lossy counter k = 10 most frequent items
 E: 11895; T: 444; O: 19; H: 2; U: 1; N: 1; G: 1; B: 1; D: 1; Y: 1; 
@@ -487,7 +487,7 @@ Exact counter k = 3 most frequent items
 E: 82984; T: 58153; A: 52340; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 10365; T: 7437; A: 6638; 
+E: 10404; T: 7341; A: 6550; 
 
 Lossy counter k = 3 most frequent items
 
@@ -496,7 +496,7 @@ Exact counter k = 5 most frequent items
 E: 82984; T: 58153; A: 52340; O: 51067; N: 44757; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 10343; T: 7132; A: 6528; O: 6315; N: 5637; 
+E: 10350; T: 7294; A: 6684; O: 6216; N: 5565; 
 
 Lossy counter k = 5 most frequent items
 R: 2; E: 1; S: 1; 
@@ -505,7 +505,7 @@ Exact counter k = 10 most frequent items
 E: 82984; T: 58153; A: 52340; O: 51067; N: 44757; S: 43098; I: 42376; H: 40510; R: 39528; D: 29582; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 10466; T: 7334; A: 6454; O: 6300; N: 5564; S: 5379; I: 5301; H: 5083; R: 4980; D: 3791; 
+E: 10414; T: 7298; A: 6544; O: 6332; N: 5641; S: 5395; I: 5206; H: 5131; R: 4937; D: 3596; 
 
 Lossy counter k = 10 most frequent items
 E: 82981; A: 14; I: 12; N: 15; R: 2; S: 2; C: 1; O: 1; 
@@ -517,7 +517,7 @@ Exact counter k = 3 most frequent items
 E: 29144; S: 12192; A: 12029; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 3657; S: 1554; A: 1493; 
+E: 3645; S: 1592; A: 1549; 
 
 Lossy counter k = 3 most frequent items
 E: 1; 
@@ -526,7 +526,7 @@ Exact counter k = 5 most frequent items
 E: 29144; S: 12192; A: 12029; T: 11458; R: 11371; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 3573; S: 1545; A: 1469; T: 1422; U: 1396; 
+E: 3634; S: 1495; A: 1466; R: 1436; T: 1397; 
 
 Lossy counter k = 5 most frequent items
 E: 17; C: 1; T: 1; 
@@ -535,7 +535,7 @@ Exact counter k = 10 most frequent items
 E: 29144; S: 12192; A: 12029; T: 11458; R: 11371; I: 11076; N: 11066; U: 11039; O: 10870; L: 8872; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 3716; S: 1448; A: 1438; N: 1426; O: 1416; T: 1413; I: 1406; U: 1404; R: 1371; L: 1101; 
+E: 3607; S: 1527; A: 1502; R: 1424; I: 1405; T: 1367; N: 1333; O: 1333; U: 1324; L: 1083; 
 
 Lossy counter k = 10 most frequent items
 E: 29143; S: 19; U: 19; T: 6; N: 4; I: 4; R: 1; A: 1; C: 1; 
@@ -547,7 +547,7 @@ Exact counter k = 3 most frequent items
 E: 1965; T: 1624; O: 1428; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 211; T: 194; R: 163; 
+E: 250; I: 170; T: 162; 
 
 Lossy counter k = 3 most frequent items
 I: 2; S: 1; 
@@ -556,7 +556,7 @@ Exact counter k = 5 most frequent items
 E: 1965; T: 1624; O: 1428; R: 1267; I: 1253; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 244; T: 188; O: 172; N: 146; I: 144; 
+E: 253; T: 197; O: 188; R: 144; I: 131; 
 
 Lossy counter k = 5 most frequent items
 N: 1; I: 1; S: 1; 
@@ -565,7 +565,7 @@ Exact counter k = 10 most frequent items
 E: 1965; T: 1624; O: 1428; R: 1267; I: 1253; N: 1099; A: 1088; S: 841; C: 658; D: 616; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 249; T: 189; R: 181; O: 170; A: 138; I: 133; N: 121; S: 112; C: 91; U: 69; 
+E: 240; T: 198; O: 186; I: 155; R: 149; N: 141; A: 137; S: 106; H: 83; C: 77; 
 
 Lossy counter k = 10 most frequent items
 E: 1951; T: 400; O: 22; B: 2; K: 1; S: 2; F: 1; I: 2; N: 1; 
@@ -577,7 +577,7 @@ Exact counter k = 3 most frequent items
 E: 12290; A: 11261; O: 10298; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 1493; A: 1437; I: 1284; 
+E: 1570; A: 1418; O: 1272; 
 
 Lossy counter k = 3 most frequent items
 O: 2; K: 1; S: 1; 
@@ -586,7 +586,7 @@ Exact counter k = 5 most frequent items
 E: 12290; A: 11261; O: 10298; I: 10179; Z: 7812; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 1538; A: 1321; O: 1292; I: 1285; Z: 958; 
+E: 1433; A: 1338; O: 1260; I: 1246; Z: 977; 
 
 Lossy counter k = 5 most frequent items
 O: 2; K: 1; S: 1; 
@@ -595,7 +595,7 @@ Exact counter k = 10 most frequent items
 E: 12290; A: 11261; O: 10298; I: 10179; Z: 7812; N: 6430; S: 6014; T: 5973; C: 5926; R: 5448; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 1599; A: 1339; I: 1307; O: 1286; Z: 988; N: 773; T: 771; S: 707; C: 706; R: 673; 
+E: 1513; A: 1369; O: 1256; I: 1245; Z: 947; N: 791; T: 778; C: 731; S: 724; R: 676; 
 
 Lossy counter k = 10 most frequent items
 E: 2119; T: 375; O: 22; K: 1; S: 1; 
@@ -607,7 +607,7 @@ Exact counter k = 3 most frequent items
 E: 14794; N: 9079; I: 8540; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 1832; N: 1126; I: 1022; 
+E: 1828; N: 1123; I: 1051; 
 
 Lossy counter k = 3 most frequent items
 
@@ -616,7 +616,7 @@ Exact counter k = 5 most frequent items
 E: 14794; N: 9079; I: 8540; R: 7265; S: 6639; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 1806; N: 1127; I: 1070; R: 927; S: 870; 
+E: 1907; N: 1124; I: 1083; R: 938; S: 839; 
 
 Lossy counter k = 5 most frequent items
 E: 2; G: 1; L: 1; 
@@ -625,7 +625,7 @@ Exact counter k = 10 most frequent items
 E: 14794; N: 9079; I: 8540; R: 7265; S: 6639; T: 6563; H: 5734; A: 5472; U: 4724; D: 4444; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 1885; N: 1136; I: 1043; R: 943; T: 849; H: 775; S: 772; A: 673; U: 595; D: 554; 
+E: 1820; N: 1125; I: 1074; R: 898; S: 836; T: 767; H: 736; A: 666; U: 555; D: 534; 
 
 Lossy counter k = 10 most frequent items
 E: 14793; N: 60; L: 4; S: 1; C: 1; H: 1; G: 1; 
@@ -637,7 +637,7 @@ Exact counter k = 3 most frequent items
 E: 20403; O: 19449; A: 19124; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 2496; O: 2479; A: 2371; 
+O: 2471; E: 2441; A: 2395; 
 
 Lossy counter k = 3 most frequent items
 
@@ -646,7 +646,7 @@ Exact counter k = 5 most frequent items
 E: 20403; O: 19449; A: 19124; T: 13212; I: 12998; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 2533; O: 2341; A: 2335; I: 1629; T: 1601; 
+O: 2485; E: 2479; A: 2358; T: 1726; I: 1555; 
 
 Lossy counter k = 5 most frequent items
 E: 9; A: 1; 
@@ -655,7 +655,7 @@ Exact counter k = 10 most frequent items
 E: 20403; O: 19449; A: 19124; T: 13212; I: 12998; N: 12177; S: 11409; U: 7953; K: 7230; P: 7040; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 2554; O: 2494; A: 2426; T: 1714; I: 1627; N: 1516; S: 1478; U: 961; K: 886; P: 865; 
+E: 2631; A: 2506; O: 2413; I: 1683; T: 1668; N: 1553; S: 1467; U: 947; P: 882; K: 876; 
 
 Lossy counter k = 10 most frequent items
 E: 20401; O: 19421; A: 19082; T: 12; N: 4; I: 3; 
@@ -667,7 +667,7 @@ Exact counter k = 3 most frequent items
 E: 22793; N: 11988; A: 10579; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 2838; N: 1487; O: 1326; 
+E: 2851; N: 1507; A: 1271; 
 
 Lossy counter k = 3 most frequent items
 
@@ -676,7 +676,7 @@ Exact counter k = 5 most frequent items
 E: 22793; N: 11988; A: 10579; O: 10324; T: 10027; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 2767; N: 1533; A: 1319; O: 1239; T: 1233; 
+E: 2868; N: 1421; A: 1331; T: 1300; I: 1242; 
 
 Lossy counter k = 5 most frequent items
 E: 2; O: 1; K: 1; S: 1; 
@@ -685,7 +685,7 @@ Exact counter k = 10 most frequent items
 E: 22793; N: 11988; A: 10579; O: 10324; T: 10027; I: 9901; R: 8776; D: 7468; L: 5423; S: 5414; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 2747; N: 1544; A: 1315; O: 1293; T: 1290; I: 1189; R: 1058; D: 921; L: 689; S: 684; 
+E: 2779; N: 1456; A: 1278; O: 1275; T: 1227; I: 1211; R: 1098; D: 911; L: 661; S: 659; 
 
 Lossy counter k = 10 most frequent items
 E: 22792; T: 369; O: 22; B: 2; K: 1; S: 1; 
@@ -697,7 +697,7 @@ Exact counter k = 3 most frequent items
 A: 17359; I: 11509; N: 10991; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-A: 2164; I: 1431; N: 1403; 
+A: 2123; I: 1446; N: 1396; 
 
 Lossy counter k = 3 most frequent items
 O: 2; S: 1; 
@@ -706,7 +706,7 @@ Exact counter k = 5 most frequent items
 A: 17359; I: 11509; N: 10991; T: 10032; E: 9768; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-A: 2211; I: 1444; N: 1331; T: 1287; E: 1189; 
+A: 2104; I: 1363; N: 1360; E: 1229; T: 1194; 
 
 Lossy counter k = 5 most frequent items
 E: 2; O: 1; K: 1; S: 1; 
@@ -715,7 +715,7 @@ Exact counter k = 10 most frequent items
 A: 17359; I: 11509; N: 10991; T: 10032; E: 9768; O: 7956; S: 7395; U: 6355; L: 5867; K: 5519; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-A: 2198; N: 1393; I: 1382; T: 1264; E: 1180; O: 1014; S: 910; U: 824; L: 745; K: 652; 
+A: 2065; I: 1440; N: 1327; T: 1245; E: 1156; O: 966; S: 860; U: 778; L: 739; K: 688; 
 
 Lossy counter k = 10 most frequent items
 A: 17357; E: 1732; T: 378; O: 22; B: 2; K: 1; S: 1; 
@@ -727,7 +727,7 @@ Exact counter k = 3 most frequent items
 E: 11606; T: 8266; A: 6933; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 1463; T: 1028; O: 876; 
+E: 1520; T: 1051; A: 854; 
 
 Lossy counter k = 3 most frequent items
 O: 2; K: 1; S: 1; 
@@ -736,7 +736,7 @@ Exact counter k = 5 most frequent items
 E: 11606; T: 8266; A: 6933; O: 6739; N: 6298; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 1433; T: 1039; A: 886; O: 882; N: 779; 
+E: 1476; T: 993; A: 867; O: 830; I: 759; 
 
 Lossy counter k = 5 most frequent items
 O: 2; S: 1; 
@@ -745,7 +745,7 @@ Exact counter k = 10 most frequent items
 E: 11606; T: 8266; A: 6933; O: 6739; N: 6298; I: 5950; R: 5529; S: 5211; H: 4769; D: 3845; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 1451; T: 986; A: 895; O: 833; N: 760; I: 758; R: 703; S: 641; H: 538; D: 474; 
+E: 1474; T: 1028; A: 860; O: 838; N: 787; R: 714; I: 683; S: 663; H: 579; D: 502; 
 
 Lossy counter k = 10 most frequent items
 E: 11599; T: 378; O: 22; S: 1; 
@@ -757,7 +757,7 @@ Exact counter k = 3 most frequent items
 E: 33334; T: 22296; A: 20118; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 4154; T: 2894; A: 2478; 
+E: 4166; T: 2722; A: 2503; 
 
 Lossy counter k = 3 most frequent items
 G: 1; E: 1; 
@@ -766,7 +766,7 @@ Exact counter k = 5 most frequent items
 E: 33334; T: 22296; A: 20118; N: 18307; O: 18200; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 4156; T: 2700; A: 2507; O: 2275; N: 2268; 
+E: 4136; T: 2800; A: 2450; N: 2271; O: 2203; 
 
 Lossy counter k = 5 most frequent items
 I: 1; D: 1; G: 1; E: 1; 
@@ -775,7 +775,7 @@ Exact counter k = 10 most frequent items
 E: 33334; T: 22296; A: 20118; N: 18307; O: 18200; R: 16317; I: 16264; H: 16040; S: 15456; D: 11000; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 4187; T: 2843; A: 2578; N: 2332; O: 2306; R: 2066; I: 2063; H: 1973; S: 1931; D: 1404; 
+E: 4205; T: 2711; A: 2457; N: 2292; O: 2256; R: 2037; H: 1998; I: 1965; S: 1853; D: 1364; 
 
 Lossy counter k = 10 most frequent items
 E: 33324; T: 7; N: 7; I: 2; B: 1; R: 1; D: 1; G: 1; 
@@ -787,7 +787,7 @@ Exact counter k = 3 most frequent items
 E: 30606; T: 21706; A: 19373; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 3819; T: 2780; A: 2447; 
+E: 3816; T: 2744; A: 2372; 
 
 Lossy counter k = 3 most frequent items
 E: 2; N: 1; D: 1; 
@@ -796,7 +796,7 @@ Exact counter k = 5 most frequent items
 E: 30606; T: 21706; A: 19373; O: 18304; H: 16717; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 3757; T: 2615; A: 2420; O: 2315; H: 2047; 
+E: 3754; T: 2811; A: 2354; O: 2282; H: 2111; 
 
 Lossy counter k = 5 most frequent items
 E: 1; N: 1; D: 1; 
@@ -805,7 +805,7 @@ Exact counter k = 10 most frequent items
 E: 30606; T: 21706; A: 19373; O: 18304; H: 16717; N: 16333; S: 15242; I: 14751; R: 13994; L: 10786; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 3883; T: 2729; A: 2460; O: 2284; N: 2043; H: 2022; S: 1895; I: 1875; R: 1775; L: 1362; 
+E: 3795; T: 2688; A: 2347; O: 2248; N: 2060; H: 2056; S: 1891; I: 1837; R: 1758; D: 1372; 
 
 Lossy counter k = 10 most frequent items
 E: 30603; A: 38; O: 5; L: 3; W: 1; M: 1; N: 2; D: 1; 
@@ -817,7 +817,7 @@ Exact counter k = 3 most frequent items
 E: 5763; T: 4371; O: 4145; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 725; T: 516; O: 508; 
+E: 716; O: 545; T: 526; 
 
 Lossy counter k = 3 most frequent items
 R: 1; D: 1; 
@@ -826,7 +826,7 @@ Exact counter k = 5 most frequent items
 E: 5763; T: 4371; O: 4145; I: 3589; A: 3509; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 691; T: 552; O: 547; A: 443; I: 441; 
+E: 703; T: 538; O: 511; A: 446; I: 434; 
 
 Lossy counter k = 5 most frequent items
 D: 1; 
@@ -835,7 +835,7 @@ Exact counter k = 10 most frequent items
 E: 5763; T: 4371; O: 4145; I: 3589; A: 3509; N: 3417; S: 3162; R: 3160; H: 2194; L: 1740; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 726; T: 524; O: 516; N: 438; A: 438; I: 434; R: 411; S: 384; H: 286; L: 202; 
+E: 718; T: 550; O: 501; A: 463; I: 444; N: 436; R: 384; S: 379; H: 284; L: 220; 
 
 Lossy counter k = 10 most frequent items
 E: 5760; T: 190; N: 9; G: 1; U: 1; A: 1; R: 1; D: 1; 
@@ -847,7 +847,7 @@ Exact counter k = 3 most frequent items
 E: 3505; T: 2701; H: 2154; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 435; T: 341; H: 275; 
+E: 432; T: 285; O: 263; 
 
 Lossy counter k = 3 most frequent items
 M: 1; E: 1; 
@@ -856,7 +856,7 @@ Exact counter k = 5 most frequent items
 E: 3505; T: 2701; H: 2154; O: 2115; A: 2067; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 440; T: 301; H: 272; R: 245; N: 239; 
+E: 451; T: 309; H: 269; A: 261; O: 251; 
 
 Lossy counter k = 5 most frequent items
 N: 1; M: 1; E: 1; 
@@ -865,7 +865,7 @@ Exact counter k = 10 most frequent items
 E: 3505; T: 2701; H: 2154; O: 2115; A: 2067; N: 1883; S: 1854; R: 1797; I: 1695; D: 1283; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 456; T: 309; A: 282; H: 261; O: 260; S: 252; R: 228; N: 224; I: 200; D: 157; 
+E: 387; T: 338; H: 273; O: 257; N: 249; S: 248; R: 245; A: 237; I: 214; D: 156; 
 
 Lossy counter k = 10 most frequent items
 E: 3493; T: 335; I: 8; R: 4; N: 1; M: 1; 
@@ -877,7 +877,7 @@ Exact counter k = 3 most frequent items
 E: 15765; T: 10650; A: 10032; 
 
 Approximate counter with fixed probability 1/8 k = 3 most frequent items
-E: 1934; T: 1291; A: 1263; 
+E: 1968; T: 1296; A: 1262; 
 
 Lossy counter k = 3 most frequent items
 
@@ -886,7 +886,7 @@ Exact counter k = 5 most frequent items
 E: 15765; T: 10650; A: 10032; O: 9706; N: 8091; 
 
 Approximate counter with fixed probability 1/8 k = 5 most frequent items
-E: 1954; T: 1367; A: 1281; O: 1231; N: 1020; 
+E: 1984; T: 1379; A: 1254; O: 1236; N: 1035; 
 
 Lossy counter k = 5 most frequent items
 S: 1; 
@@ -895,7 +895,7 @@ Exact counter k = 10 most frequent items
 E: 15765; T: 10650; A: 10032; O: 9706; N: 8091; I: 7713; R: 7707; H: 7546; S: 7507; D: 5273; 
 
 Approximate counter with fixed probability 1/8 k = 10 most frequent items
-E: 1969; T: 1311; A: 1304; O: 1243; N: 1042; R: 953; S: 936; I: 931; H: 923; D: 636; 
+E: 1835; T: 1366; A: 1286; O: 1195; N: 1013; I: 1010; R: 961; S: 941; H: 940; D: 679; 
 
 Lossy counter k = 10 most frequent items
 E: 15746; A: 12; I: 12; N: 16; S: 7; R: 2; 

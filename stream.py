@@ -12,16 +12,6 @@ from stop_words import get_stop_words
 
 nltk.download('stopwords') #downloads stopwords list
 
-######
-# a medida que se le o ficheiro
-# usar dicionarios, nao e preciso usar hash tables
-# verificar se a ordem das k most frequent letters se mantem
-# usar muitos contadores
-# Use Counter class for exact counting
-# repetir contagem para varios epsilons (no caso do lossy count) 
-# para encontrar optimal width
-######
-
 
 class Stream:
     """
@@ -42,7 +32,6 @@ class Stream:
         
         # other
         self.approx_stats = None # attribute with approximate counter stats
-        self._nlines = 0 # number of lines read, might be interesting for some statistics
         self._process() # cleans file and counts while streaming
         
         # k most frequent letters, just of exact and approximate counters, as lossy already does this
@@ -51,10 +40,10 @@ class Stream:
     # rewrite printing dunder method for easier reading of Stream object
     def __str__(self) -> str:
         strng = f"Exact counter k = {self._k} most frequent items\n"
-        for item, total in self.exact_most_common:
+        for item, total in self.exact_most_common.items():
             strng += f"{item}: {total}; "
         strng += f"\n\nApproximate counter with fixed probability 1/8 k = {self._k} most frequent items\n"
-        for item, total in self.approx_most_common:
+        for item, total in self.approx_most_common.items():
             strng += f"{item}: {total}; "
         strng += f"\n\nLossy counter k = {self._k} most frequent items\n"
         for item, total in self.lossy_count._count.items():
@@ -88,8 +77,6 @@ class Stream:
                 line = self._clean_line(line, language)
                 if line == []: # skips empty lines
                     continue
-                
-                self._nlines += 1 # increments the number of lines read
 
                 # COUNTERS
                 # Creates list with list of letters in line, ready to be used by the counters
@@ -153,22 +140,22 @@ class Stream:
                 stream = list(chain.from_iterable(line))
                 self.approx_count = approximate_counter(stream, self.approx_count, 0.125)
     
-    def most_common(self):
+    def most_common(self) -> tuple[dict, dict]:
         """Find k most frequent letters of exact and approximate counters"""
         # extract counts from object
         exact_counts = self.exact_count.copy() #copy so it doesnt change object attributes
         approx_counts = self.approx_count.copy()
-        exact_most_common = []
-        approx_most_common = []
+        exact_most_common = {}
+        approx_most_common = {}
         
         for _ in range(self._k):
             # finds maximum counts, adds to list with most common and deletes from dictionary, repeat k times
             exact_j = max(exact_counts, key=exact_counts.get)
-            exact_most_common.append((exact_j, exact_counts[exact_j]))
+            exact_most_common[exact_j] = exact_counts[exact_j]
             del exact_counts[exact_j]
             
-            approx_j = exact_j = max(approx_counts, key=approx_counts.get)
-            approx_most_common.append((approx_j, approx_counts[approx_j]))
+            approx_j = max(approx_counts, key=approx_counts.get)
+            approx_most_common[approx_j] = approx_counts[approx_j]
             del approx_counts[approx_j]
     
         return exact_most_common, approx_most_common
